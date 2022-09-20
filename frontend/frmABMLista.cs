@@ -24,6 +24,13 @@ namespace frontend
         private void btAgregar_Click(object sender, EventArgs e)
         {
             Lista.Agregar(txtNombre.Text);
+            lblSalida.Text = Lista.Salida();
+        }
+
+        private void btModificarOri_Click(object sender, EventArgs e)
+        {
+            Lista.Modificar(txtNombreOri.Text, txtNombreNue.Text);
+            lblSalida.Text = Lista.Salida();
         }
     }
 }

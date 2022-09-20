@@ -43,6 +43,7 @@
             this.lblMensaje = new System.Windows.Forms.Label();
             this.btBorrar = new System.Windows.Forms.Button();
             this.lblNombreNue = new System.Windows.Forms.Label();
+            this.lblSalida = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -79,6 +80,7 @@
             this.btModificarOri.TabIndex = 5;
             this.btModificarOri.Text = "Modificar";
             this.btModificarOri.UseVisualStyleBackColor = true;
+            this.btModificarOri.Click += new System.EventHandler(this.btModificarOri_Click);
             // 
             // txtNombreOri
             // 
@@ -171,11 +173,20 @@
             this.lblNombreNue.TabIndex = 14;
             this.lblNombreNue.Text = "Nombre nuevo";
             // 
+            // lblSalida
+            // 
+            this.lblSalida.AutoSize = true;
+            this.lblSalida.Location = new System.Drawing.Point(456, 13);
+            this.lblSalida.Name = "lblSalida";
+            this.lblSalida.Size = new System.Drawing.Size(0, 13);
+            this.lblSalida.TabIndex = 15;
+            // 
             // frmABMLista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 208);
+            this.ClientSize = new System.Drawing.Size(987, 208);
+            this.Controls.Add(this.lblSalida);
             this.Controls.Add(this.lblNombreNue);
             this.Controls.Add(this.btBorrar);
             this.Controls.Add(this.lblMensaje);
@@ -215,6 +226,7 @@
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.Button btBorrar;
         private System.Windows.Forms.Label lblNombreNue;
+        private System.Windows.Forms.Label lblSalida;
     }
 }
 

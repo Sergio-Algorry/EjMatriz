@@ -8,19 +8,20 @@ using System.Threading.Tasks;
 
 namespace backend
 {
-    public class Lista
+    public class ListaSinRepetidos
     {
+        //no se aceptan nombres repetidos
         public string[] Nombres { get; set; } = new string[0];
 
-        public void Agregar(string nombre)
-        {
+        public string Agregar(string nombre)
+        {            
+            if (Buscar(nombre) != -1)
+            {
+                return "El nombre ya existe";
+            }
             Redimensionar();
             Nombres[Nombres.Length - 1] = nombre;
-        }
-
-        public void Modificar(int fila, string nombre)
-        {
-
+            return "";
         }
 
         public bool Modificar(string nombreOriginal, string nombreNuevo)
@@ -49,18 +50,19 @@ namespace backend
             return fila;
         }
 
-        public bool Eliminar(int fila)
-        {
-            bool res = false;
-
-            return res;
-        }
-
         public bool Eliminar(string nombreABorrar)
         {
-            bool res = false;
-
-            return res;
+            int fila = Buscar(nombreABorrar);
+            
+            if ( fila != -1)
+            {
+                Nombres[fila] = "";
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public string Salida()

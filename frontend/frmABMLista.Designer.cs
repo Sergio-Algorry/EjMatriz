@@ -36,10 +36,6 @@
             this.lblNombreOri = new System.Windows.Forms.Label();
             this.txtNombreNue = new System.Windows.Forms.TextBox();
             this.btBuscar = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblMensaje = new System.Windows.Forms.Label();
             this.btBorrar = new System.Windows.Forms.Button();
             this.lblNombreNue = new System.Windows.Forms.Label();
@@ -113,38 +109,7 @@
             this.btBuscar.TabIndex = 7;
             this.btBuscar.Text = "Buscar";
             this.btBuscar.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(184, 119);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(161, 20);
-            this.textBox4.TabIndex = 11;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(351, 119);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(16, 119);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(161, 20);
-            this.textBox5.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
             // 
             // lblMensaje
             // 
@@ -152,7 +117,7 @@
             this.lblMensaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensaje.Location = new System.Drawing.Point(2, 181);
             this.lblMensaje.Name = "lblMensaje";
-            this.lblMensaje.Size = new System.Drawing.Size(424, 27);
+            this.lblMensaje.Size = new System.Drawing.Size(644, 27);
             this.lblMensaje.TabIndex = 12;
             // 
             // btBorrar
@@ -163,6 +128,7 @@
             this.btBorrar.TabIndex = 13;
             this.btBorrar.Text = "Borrar";
             this.btBorrar.UseVisualStyleBackColor = true;
+            this.btBorrar.Click += new System.EventHandler(this.btBorrar_Click);
             // 
             // lblNombreNue
             // 
@@ -185,15 +151,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 208);
+            this.ClientSize = new System.Drawing.Size(647, 208);
             this.Controls.Add(this.lblSalida);
             this.Controls.Add(this.lblNombreNue);
             this.Controls.Add(this.btBorrar);
             this.Controls.Add(this.lblMensaje);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btBuscar);
             this.Controls.Add(this.txtNombreNue);
             this.Controls.Add(this.btModificarOri);
@@ -219,10 +181,6 @@
         private System.Windows.Forms.Label lblNombreOri;
         private System.Windows.Forms.TextBox txtNombreNue;
         private System.Windows.Forms.Button btBuscar;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.Button btBorrar;
         private System.Windows.Forms.Label lblNombreNue;

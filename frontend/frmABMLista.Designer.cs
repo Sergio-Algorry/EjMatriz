@@ -70,7 +70,7 @@
             // 
             // btModificarOri
             // 
-            this.btModificarOri.Location = new System.Drawing.Point(351, 75);
+            this.btModificarOri.Location = new System.Drawing.Point(381, 72);
             this.btModificarOri.Name = "btModificarOri";
             this.btModificarOri.Size = new System.Drawing.Size(75, 23);
             this.btModificarOri.TabIndex = 5;
@@ -122,7 +122,7 @@
             // 
             // btBorrar
             // 
-            this.btBorrar.Location = new System.Drawing.Point(346, 26);
+            this.btBorrar.Location = new System.Drawing.Point(381, 26);
             this.btBorrar.Name = "btBorrar";
             this.btBorrar.Size = new System.Drawing.Size(75, 23);
             this.btBorrar.TabIndex = 13;
